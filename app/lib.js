@@ -1,0 +1,3 @@
+define([
+	    'fileupload',
+], function () { });

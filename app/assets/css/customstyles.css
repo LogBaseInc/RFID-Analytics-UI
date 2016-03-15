@@ -1,0 +1,118 @@
+.ajax-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px; /* -1 * image width / 2 */
+  margin-top: -32px; /* -1 * image height / 2 */
+}
+
+.errortext {
+    color: #bf1c1c;
+}
+
+.error-messages {
+    -moz-transition: 1s linear all;
+    -o-transition: 1s linear all;
+    -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+ }
+
+.error-messages.ng-active {
+    color: #bf1c1c;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+.error-messages.ng-inactive {
+}
+
+.logoimage {
+    display:inline !important;
+    margin-right:0px !important;
+    margin-bottom:2px !important;
+    height: 20px;
+}
+
+.marginleft5{
+  margin-left:5px;
+}
+
+html{
+    height:100% !important;
+    min-height:100% !important;
+}
+body{
+    min-height:100% !important;
+}
+
+html {tm-marker-label
+    height:92%;
+}
+
+body, .tm-partials, .tm-live-map {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Slab' !important;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.zeromargin {
+    margin: 0px;
+}
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    height: 200px;
+    width: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.21);
+    border-radius: 5px;
+    background: #f8f8f8;
+}
+
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.text-muted { 
+  color:#777
+}
+
+.margintop15 {
+  margin-top: 15px !important;
+}
+
+.btn-default {
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.point:last {
+    margin:0 !important;
+}
+.point {
+    background:#DDD;
+    border-radius:2px;
+    display:inline-block;
+    height:5px;
+    margin-right:3px;
+    width:50px;
+}

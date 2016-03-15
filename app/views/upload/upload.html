@@ -1,0 +1,104 @@
+<div data-ng-controller="upload as vm">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<br/>
+				<form class="form-horizontal">
+					<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Handheld </h5>
+					<br/>
+					<div class="form-group zeromargin">
+						<div class="col-md-12">
+							<span class="fileinput-button">
+								<center>
+								<img src="assets/images/handheld.png" style="height: 150px; margin-top: 18px; margin-bottom:10px"></img>
+				                <input type="file" ngf-select="" ng-model="vm.selectedhhfile" name="file" accept=".csv">
+				            	</br>
+				                <small>Select or Drop file</small>
+				                </center>
+			                </span>
+		            	</div>
+					</div>
+				</form>
+				<div data-ng-show="vm.selectedhhfile != null" style="width:250px">
+					<center>
+						<h4><a data-ng-click="vm.uploadhh()">{{vm.selectedhhfile.name}}<i class="glyphicon glyphicon-cloud-upload" style="margin-left:15px;"></i></a></h4>
+					</center>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<br/>
+				<form class="form-horizontal">
+					<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Smart Sense </h5>
+					<br/>
+					<div class="form-group zeromargin">
+						<div class="col-md-12">
+							<span class="fileinput-button">
+								<center>
+									<img src="assets/images/smartsense.png" style="height: 150px; margin-top: 18px; margin-bottom:10px"></img>
+				                   <input type="file" ngf-select="" ng-model="vm.selectedssfile" name="file" accept=".csv">
+				                   </br>
+				                   <small>Select or Drop file</small>
+				                </center>
+			                </span>
+		            	</div>
+					</div>
+				</form>
+				<div data-ng-show="vm.selectedssfile != null" style="width:250px">
+					<center>
+						<h4><a>{{vm.selectedssfile.name}}<i class="glyphicon glyphicon-cloud-upload" style="margin-left:15px;"></i></a></h4>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<br/>
+				<form class="form-horizontal">
+					<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Pre Note </h5>
+					<br/>
+					<div class="form-group zeromargin">
+						<div class="col-md-12">
+							<span class="fileinput-button">
+								<center>
+									<img src="assets/images/prenote.png" style="height: 150px; margin-top: 20px; margin-bottom:8px"></img>
+					                  <input type="file" ngf-select="" ng-model="vm.selectedpnfile" name="file" accept=".csv">
+					                   </br>
+					                <small>Select or Drop file</small>
+				                </center>
+			                </span>
+		            	</div>
+					</div>
+				</form>
+				<div data-ng-show="vm.selectedpnfile != null" style="width:250px">
+					<center>
+						<h4><a data-ng-click="vm.uploadprenote()">{{vm.selectedpnfile.name}}<i class="glyphicon glyphicon-cloud-upload" style="margin-left:15px;"></i></a></h4>
+					</center>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<br/>
+				<form class="form-horizontal">
+					<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Item File </h5>
+					<br/>
+					<div class="form-group zeromargin">
+						<div class="col-md-12">
+							<span class="fileinput-button">
+								<center>
+									<img src="assets/images/itemfile.png" style="height: 150px; margin-top: 20px; margin-bottom:8px"></img>
+				                    <input type="file" ngf-select="" ng-model="vm.selectediffile" name="file" accept=".csv">
+				                    </br>
+				                    <small>Select or Drop file</small>
+				                </center>
+			                </span>
+		            	</div>
+					</div>
+				</form>
+				<div data-ng-show="vm.selectediffile != null" style="width:250px">
+					<center>
+						<h4><a>{{vm.selectediffile.name}}<i class="glyphicon glyphicon-cloud-upload" style="margin-left:15px;"></i></a></h4>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
