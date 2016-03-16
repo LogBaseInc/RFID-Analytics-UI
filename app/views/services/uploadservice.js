@@ -14,12 +14,15 @@ define(['angular', 'config.route'], function (angular, configroute) {
             };
             return service;
 
-            function uploadhh(data) {
+            function uploadhh(formdata) {
                 var urlstr =  url + 'zebra/hh/'+token;
                 return $http({
                     url: urlstr,
                     method: "POST",
-                    data: data
+                    headers : {
+                      'Content-Type': undefined
+                    },
+                    data: formdata
                 })
                 .then(function(response) {
                     return response.data;
@@ -29,12 +32,15 @@ define(['angular', 'config.route'], function (angular, configroute) {
                 });
             }
 
-            function uploadss(data) {
+            function uploadss(formdata) {
                 var urlstr =  url + 'zebra/ss/'+token;
                 return $http({
                     url: urlstr,
                     method: "POST",
-                    data: data
+                    headers : {
+                      'Content-Type': undefined
+                    },
+                    data: formdata
                 })
                 .then(function(response) {
                     return response.data;
@@ -44,12 +50,15 @@ define(['angular', 'config.route'], function (angular, configroute) {
                 });
             }
 
-            function uploadprenote(data) {
+            function uploadprenote(formdata) {
                 var urlstr =  url + 'prenote/'+token;
                 return $http({
                     url: urlstr,
                     method: "POST",
-                    data: data
+                    headers : {
+                      'Content-Type': undefined
+                    },
+                    data: formdata
                 })
                 .then(function(response) {
                     return response.data;
